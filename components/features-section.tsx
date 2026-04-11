@@ -1,4 +1,5 @@
-import { Clock, Phone, Tag, Archive, PhoneIncoming, Smartphone } from "lucide-react"
+import Image from "next/image"
+import { Clock, Phone, Tag, Archive, Smartphone, PhoneIncoming } from "lucide-react"
 
 export function FeaturesSection() {
   return (
@@ -52,94 +53,72 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            {/* Caller ID visual */}
+            {/* Real app screenshot — contact list showing caller ID context */}
             <div className="flex justify-center">
-              <div className="w-full max-w-[240px] rounded-2xl bg-background/10 p-5 backdrop-blur">
-                <div className="text-center">
-                  <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-bold text-accent-foreground">
-                    J
-                  </div>
-                  <p className="text-xs text-background/40">Incoming call</p>
-                  <p className="mt-1 text-lg font-bold text-background">Delivery — James</p>
-                  <div className="mt-1 flex items-center justify-center gap-1.5">
-                    <span className="inline-block h-2 w-2 rounded-full bg-amber-400" />
-                    <span className="text-xs text-background/50">Delivery &middot; 2h left</span>
-                  </div>
-                </div>
-                <div className="mt-5 flex justify-center gap-8">
-                  <div className="flex flex-col items-center gap-1">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-red-500/90">
-                      <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </div>
-                    <span className="text-[10px] text-background/40">Decline</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-1">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-green-500/90">
-                      <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <span className="text-[10px] text-background/40">Accept</span>
-                  </div>
-                </div>
+              <div className="w-full max-w-[200px] rounded-[2rem] border-[4px] border-neutral-700 bg-black shadow-xl">
+                <Image
+                  src="/app-contact-list.png"
+                  alt="Contact list with Caller ID labels and expiry timers"
+                  width={590}
+                  height={1278}
+                  className="rounded-[1.7rem]"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other features grid */}
+        {/* Remaining features grid */}
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
               icon: Clock,
               title: "Expiry timer",
               description:
-                "Set a timer from hours to months when you save a contact. When it runs out, the contact auto-deletes — no cleanup needed.",
+                "Set a timer from hours to months when you save a contact. When it runs out, the contact auto-deletes.",
             },
             {
               icon: Tag,
-              title: "Labels & categories",
+              title: "Smart labels",
               description:
-                "Six default labels — Delivery, Events, Travel, Services, Gig Work, and Dating. Create your own custom labels with premium.",
+                "Six default labels — Delivery, Events, Travel, Services, Gig Work, and Dating. Create custom labels with premium.",
             },
             {
               icon: Phone,
               title: "Call & message",
               description:
-                "Call and text directly from the app without saving numbers to your phone's address book. Keep your phone book clean.",
+                "Call and text directly from the app without saving to your phone book.",
             },
             {
               icon: Archive,
               title: "Archive, don't lose",
               description:
-                "Changed your mind before a contact expires? Archive it instead. Retrieve archived contacts whenever you need them.",
+                "Archive contacts before they expire. Retrieve them whenever you need.",
             },
             {
               icon: Smartphone,
               title: "Cloud sync",
               description:
-                "Sync your temporary contacts across all your devices with premium. Switch phones without losing anything.",
+                "Sync across all your devices with premium. Switch phones seamlessly.",
             },
             {
               icon: Clock,
               title: "Extended expiry",
               description:
-                "Need more time? Premium unlocks extended expiry options and custom durations beyond the default range.",
+                "Premium unlocks extended durations and custom expiry options.",
             },
           ].map((feature, i) => (
             <div
               key={i}
-              className="group rounded-2xl border border-transparent bg-secondary/50 p-6 transition-all duration-200 hover:border-border hover:bg-background hover:shadow-lg hover:shadow-black/[0.03]"
+              className="group rounded-2xl border border-transparent bg-secondary/50 p-5 transition-all duration-200 hover:border-border hover:bg-background hover:shadow-lg hover:shadow-black/[0.03]"
             >
-              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                <feature.icon className="h-5 w-5" strokeWidth={1.5} />
+              <div className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                <feature.icon className="h-4 w-4" strokeWidth={1.5} />
               </div>
-              <h3 className="text-[15px] font-semibold text-foreground">
+              <h3 className="text-sm font-semibold text-foreground">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                 {feature.description}
               </p>
             </div>
