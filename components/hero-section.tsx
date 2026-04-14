@@ -11,7 +11,7 @@ export function HeroSection() {
       </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        <div className="flex flex-col items-center lg:flex-row lg:items-center gap-16">
+        <div className="flex flex-col items-center lg:flex-row lg:items-center gap-4 lg:gap-16 lg:justify-between">
           {/* Hero content */}
           <div className="text-center lg:shrink-0 lg:text-left">
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1 text-xs font-medium text-muted-foreground shadow-sm">
@@ -52,7 +52,7 @@ export function HeroSection() {
           </div>
 
           {/* App demo video in phone frame */}
-          <div className="relative mt-20 max-w-70 lg:mt-0 lg:min-w-0 lg:flex-1">
+          <div className="relative mt-8 max-w-70 lg:mt-0 lg:min-w-0 lg:flex-1">
             <div className="rounded-[2.5rem] border-[6px] border-neutral-800 bg-black p-0 shadow-2xl shadow-black/20 lg:rounded-[3rem] lg:border-8">
               <video
                 autoPlay
