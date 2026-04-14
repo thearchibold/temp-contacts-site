@@ -39,6 +39,12 @@ export function Footer() {
               How It Works
             </Link>
             <Link
+              href="/#faq"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              FAQ
+            </Link>
+            <Link
               href="/privacy"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >

@@ -33,6 +33,16 @@ export const metadata: Metadata = {
     'delivery contacts',
     'gig worker contacts',
     'clean address book',
+    'self destructing contacts',
+    'temporary phone numbers',
+    'disposable contacts',
+    'contact expiry app',
+    'delete old contacts automatically',
+    'caller id app',
+    'organize phone contacts',
+    'contact cleanup app',
+    'temporary contact storage',
+    'privacy contacts app',
   ],
   authors: [{ name: 'Temp Contacts' }],
   creator: 'Temp Contacts',
@@ -44,21 +54,12 @@ export const metadata: Metadata = {
     title: 'Temp Contacts — Contacts That Expire',
     description:
       'Save phone contacts with an expiry timer — they automatically delete after a set period. Keep your address book clean.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Temp Contacts — Contacts That Expire',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Temp Contacts — Contacts That Expire',
     description:
       'Save phone contacts with an expiry timer — they automatically delete after a set period.',
-    images: ['/og-image.png'],
   },
   robots: {
     index: true,

@@ -46,6 +46,12 @@ export function Header() {
             How It Works
           </Link>
           <Link
+            href="/#faq"
+            className="text-[13px] font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            FAQ
+          </Link>
+          <Link
             href="/privacy"
             className="text-[13px] font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
@@ -97,6 +103,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
+            </Link>
+            <Link
+              href="/#faq"
+              className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </Link>
             <Link
               href="/privacy"

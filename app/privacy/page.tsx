@@ -225,6 +225,31 @@ export default function PrivacyPage() {
         </div>
       </main>
       <Footer />
+
+      {/* BreadcrumbList schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.tempcontacts.space",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Privacy Policy",
+                item: "https://www.tempcontacts.space/privacy",
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }
