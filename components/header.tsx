@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { AndroidDownloadButton } from "@/components/android-download-button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
@@ -110,11 +111,11 @@ export function Header() {
                   Download for iOS
                 </a>
               </Button>
-              <Button size="sm" variant="outline" className="flex-1 h-9 rounded-full text-xs" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Android (Soon)
-                </a>
-              </Button>
+              <AndroidDownloadButton
+                size="sm"
+                className="flex-1 h-9 rounded-full text-xs"
+                label="Android (Beta)"
+              />
             </div>
           </nav>
         </div>
