@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden pt-24 pb-20 sm:pt-32 sm:pb-28">
       {/* Background gradient */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-150 w-225 rounded-full bg-accent/5 blur-3xl" />
       </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -50,14 +50,14 @@ export function HeroSection() {
         </div>
 
         {/* App demo video in phone frame */}
-        <div className="relative mx-auto mt-20 max-w-[280px]">
+        <div className="relative mx-auto mt-20 max-w-70">
           <div className="rounded-[2.5rem] border-[6px] border-neutral-800 bg-black p-0 shadow-2xl shadow-black/20">
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="rounded-[2rem] w-full"
+              className="rounded-4xl w-full"
               poster="/app-contact-list.png"
             >
               <source src="/app-demo.mp4" type="video/mp4" />
@@ -67,7 +67,7 @@ export function HeroSection() {
                 alt="Temp Contacts app — contact list showing labels, expiry timers, and quick call/message buttons"
                 width={590}
                 height={1278}
-                className="rounded-[2rem]"
+                className="rounded-4xl"
               />
             </video>
           </div>
