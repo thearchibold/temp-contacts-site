@@ -60,7 +60,7 @@ export function UseCasesSection() {
           {useCases.map((useCase, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 rounded-xl bg-background p-5 transition-shadow hover:shadow-md hover:shadow-black/[0.03]"
+              className="flex items-start gap-4 rounded-xl bg-background p-5 transition-shadow hover:shadow-md hover:shadow-black/3"
             >
               <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${useCase.color}`}>
                 <useCase.icon className="h-5 w-5" strokeWidth={1.5} />
