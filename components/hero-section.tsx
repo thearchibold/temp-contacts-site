@@ -49,6 +49,22 @@ export function HeroSection() {
                 label="Download for Android"
               />
             </div>
+
+            <div className="mt-6 flex justify-center lg:justify-start">
+              <a
+                href="https://www.producthunt.com/products/temp-contacts?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-temp-contacts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1144036&theme=light&t=1778488921897"
+                  alt="Temp Contacts - Your phone contacts shouldn't be forever | Product Hunt"
+                  width={250}
+                  height={54}
+                />
+              </a>
+            </div>
           </div>
 
           {/* App demo video in phone frame */}
